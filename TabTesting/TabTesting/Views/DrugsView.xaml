@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             x:Class="TabTesting.Views.DrugsView"
+             xmlns:dblend="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:ViewModels="clr-namespace:TabTesting.ViewModels;assembly=TabTesting"
+             mc:Ignorable="dblend"
+             dblend:DataContext="{dblend:DesignInstance ViewModels:DrugsViewModel}"
+>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Label Text="{Binding Value}"/>
+            <Label Text="{Binding Unit}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
